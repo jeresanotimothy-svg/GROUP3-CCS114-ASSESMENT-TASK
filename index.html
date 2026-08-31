@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOVE THE 7 WONDERS</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- SCROLLSPY-->
+<body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="100"
+    tabindex="0">
+
+<!-- NAVBAR  -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top wonder-navbar" id="siteNav">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Love the 7 Wonders</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-lg-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#explore">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#travel">Time To Travel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#history-gallery">History Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+            </ul>
+            <a class="btn nav-link wonder-nav-cta mt-3 mt-lg-0 ms-lg-4" href="#contact">Book Now</a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO CAROUSEL -->
+<header id="home">
+  <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <video class="d-block w-100 hero-img" autoplay muted loop playsinline poster="hero-great-wall-poster.jpg">
+          <source src="1.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="carousel-caption hero-caption">
+          <h1 class="display-3 fw-bold">The New 7 Wonders<br>of the World</h1>
+          <p class="lead">Ancient stone. Timeless wonder. Explore the landmarks that captured the world's imagination.</p>
+          <a href="#travel" class="btn btn-warning btn-lg">Meet the Wonders</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg">Plan A Trip</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <video class="d-block w-100 hero-img" autoplay muted loop playsinline poster="hero-machu-picchu-poster.jpg">
+          <source src="2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="carousel-caption hero-caption">
+          <h1 class="display-3 fw-bold">Seven Marvels.<br>One Journey.</h1>
+          <p class="lead">From mountain citadels to desert cities, discover wonders built centuries apart yet united by human ambition.</p>
+          <a href="#history-gallery" class="btn btn-warning btn-lg">View Gallery</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <video class="d-block w-100 hero-img" autoplay muted loop playsinline poster="hero-taj-mahal-poster.jpg">
+          <source src="3.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="carousel-caption hero-caption">
+          <h1 class="display-3 fw-bold">Chosen by the World</h1>
+          <p class="lead">More than 100 million votes decided these seven modern wonders. See which ones made the list.</p>
+          <a href="#contact" class="btn btn-warning btn-lg">Plan A Trip</a>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</header>
+
+<!-- ALERT -->
+<div class="container mt-4">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Fun fact:</strong> The winners were announced on 07/07/07 (July 7, 2007) in Lisbon, Portugal.
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+</div>
+
+<!--  SECTION EXPLORE  -->
+<section id="explore" class="py-5 explore-tours-section">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Explore the Wonders</h2>
+    <div class="row g-4">
+
+      <div class="col-12 col-md-4">
+        <div class="tour-info-card h-100">
+          <span class="tour-info-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"></circle><path d="M12 21c-4-4.5-7-8-7-11a7 7 0 0 1 14 0c0 3-3 6.5-7 11z"></path></svg>
+          </span>
+          <span class="tour-info-badge">1 Wonder</span>
+          <h3 class="tour-info-title">Tour 1</h3>
+          <p class="tour-info-desc">Just the Great Wall of China — 21,000 kilometers of ancient defense stretched across mountains and plains.</p>
+          <a href="#travel" class="btn btn-outline-dark tour-info-btn">See in Time To Travel</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="tour-info-card h-100">
+          <span class="tour-info-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3Z"></path><path d="M9 3v15"></path><path d="M15 6v15"></path></svg>
+          </span>
+          <span class="tour-info-badge">4 Wonders</span>
+          <h3 class="tour-info-title">Tour 2</h3>
+          <p class="tour-info-desc">Petra, Christ the Redeemer, Chichén Itzá, and the Taj Mahal — four wonders spanning four continents.</p>
+          <a href="#travel" class="btn btn-outline-dark tour-info-btn">See in Time To Travel</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="tour-info-card h-100">
+          <span class="tour-info-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"></path></svg>
+          </span>
+          <span class="tour-info-badge">7 Wonders</span>
+          <h3 class="tour-info-title">Tour 3</h3>
+          <p class="tour-info-desc">The full journey — all seven wonders of the world, from ancient stone to a 20th-century marvel.</p>
+          <a href="#travel" class="btn btn-outline-dark tour-info-btn">See in Time To Travel</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--  SECTION TIME TO TRAVEL   -->
+<section id="travel" class="history-hero">
+
+  
+  <input type="radio" name="historyBg" id="bg-great-wall" class="history-bg-radio">
+  <input type="radio" name="historyBg" id="bg-petra" class="history-bg-radio">
+  <input type="radio" name="historyBg" id="bg-christ-redeemer" class="history-bg-radio">
+  <input type="radio" name="historyBg" id="bg-machu-picchu" class="history-bg-radio">
+  <input type="radio" name="historyBg" id="bg-chichen-itza" class="history-bg-radio">
+  <input type="radio" name="historyBg" id="bg-colosseum" class="history-bg-radio">
+  <input type="radio" name="historyBg" id="bg-taj-mahal" class="history-bg-radio">
+
+  <div class="history-bg-stack">
+    <video class="history-hero-video" data-bg="default" autoplay muted loop playsinline poster="history-wonders-poster.jpg">
+      <source src="16.mp4" type="video/mp4">
+    </video>
+    <video class="history-hero-video" data-bg="great-wall" autoplay muted loop playsinline poster="history-great-wall-poster.jpg">
+      <source src="15.mp4" type="video/mp4">
+    </video>
+    <video class="history-hero-video" data-bg="petra" autoplay muted loop playsinline poster="history-petra-poster.jpg">
+      <source src="17.mp4" type="video/mp4">
+    </video>
+    <video class="history-hero-video" data-bg="christ-redeemer" autoplay muted loop playsinline poster="history-christ-redeemer-poster.jpg">
+      <source src="18.mp4" type="video/mp4">
+    </video>
+    <video class="history-hero-video" data-bg="machu-picchu" autoplay muted loop playsinline poster="history-machu-picchu-poster.jpg">
+      <source src="19.mp4" type="video/mp4">
+    </video>
+    <video class="history-hero-video" data-bg="chichen-itza" autoplay muted loop playsinline poster="history-chichen-itza-poster.jpg">
+      <source src="20.mp4" type="video/mp4">
+    </video>
+    <video class="history-hero-video" data-bg="colosseum" autoplay muted loop playsinline poster="history-colosseum-poster.jpg">
+      <source src="21.mp4" type="video/mp4">
+    </video>
+    <video class="history-hero-video" data-bg="taj-mahal" autoplay muted loop playsinline poster="history-taj-mahal-poster.jpg">
+      <source src="22.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="history-hero-overlay"></div>
+
+  <div class="container history-hero-inner">
+
+    <div class="history-text-panel" data-panel="default">
+      <span class="section-eyebrow section-eyebrow-light">Time To Travel</span>
+      <h2 class="history-hero-heading">Chosen by the World,<br>Built Across Millennia</h2>
+      <p class="history-hero-desc">From stone raised before recorded history to a 20th-century monument overlooking Rio, the New 7 Wonders span continents and centuries and yet all seven were chosen by more than 100 million public votes. Tap a wonder below and watch the scene behind it change.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg history-hero-btn">Plan A Trip</a>
+    </div>
+
+    <div class="history-text-panel" data-panel="great-wall">
+      <span class="section-eyebrow section-eyebrow-light">Great Wall · China</span>
+      <h2 class="history-hero-heading">21,000 Kilometers<br>of Ancient Defense</h2>
+      <p class="history-hero-desc">Begun as early as the 7th century BC and expanded by successive dynasties, the Great Wall protected China from invasion across northern mountains and plains. Contrary to popular myth, it isn't visible from the Moon with the naked eye.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg history-hero-btn">Plan A Trip</a>
+    </div>
+
+    <div class="history-text-panel" data-panel="petra">
+      <span class="section-eyebrow section-eyebrow-light">Petra · Jordan</span>
+      <h2 class="history-hero-heading">A Rose-Red City<br>Carved in Stone</h2>
+      <p class="history-hero-desc">Flourishing from around the 5th century BC, Petra controlled the trade routes of incense and spices. Its famous facade, Al-Khazneh, greets visitors after a walk through the narrow canyon called the Siq.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg history-hero-btn">Plan A Trip</a>
+    </div>
+
+    <div class="history-text-panel" data-panel="christ-redeemer">
+      <span class="section-eyebrow section-eyebrow-light">Christ the Redeemer · Brazil</span>
+      <h2 class="history-hero-heading">A Symbol Above<br>Rio de Janeiro</h2>
+      <p class="history-hero-desc">Completed in 1931, this reinforced concrete and soapstone statue stands about 700 meters above sea level on Corcovado mountain and has become one of the most recognizable symbols of Brazil.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg history-hero-btn">Plan A Trip</a>
+    </div>
+
+    <div class="history-text-panel" data-panel="machu-picchu">
+      <span class="section-eyebrow section-eyebrow-light">Machu Picchu · Peru</span>
+      <h2 class="history-hero-heading">The Lost City<br>of the Incas</h2>
+      <p class="history-hero-desc">Built around 1450 for the Inca emperor Pachacuti and abandoned during the Spanish conquest, Machu Picchu was revealed to the world by Hiram Bingham in 1911. Its stones fit together without mortar.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg history-hero-btn">Plan A Trip</a>
+    </div>
+
+    <div class="history-text-panel" data-panel="chichen-itza">
+      <span class="section-eyebrow section-eyebrow-light">Chichen Itza · Mexico</span>
+      <h2 class="history-hero-heading">Where the Serpent<br>Descends</h2>
+      <p class="history-hero-desc">Flourishing from around 600 AD, Chichen Itza was one of the greatest Maya centers in the Yucatan. During the spring and autumn equinoxes, light on El Castillo creates the illusion of a serpent descending its staircase.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg history-hero-btn">Plan A Trip</a>
+    </div>
+
+    <div class="history-text-panel" data-panel="colosseum">
+      <span class="section-eyebrow section-eyebrow-light">Colosseum · Italy</span>
+      <h2 class="history-hero-heading">Rome's Grand<br>Amphitheater</h2>
+      <p class="history-hero-desc">Opened in 80 AD under Emperor Titus, the Colosseum hosted gladiator contests, animal hunts, and mock sea battles. Its underground hypogeum passages lifted fighters and animals onto the arena floor.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg history-hero-btn">Plan A Trip</a>
+    </div>
+
+    <div class="history-text-panel" data-panel="taj-mahal">
+      <span class="section-eyebrow section-eyebrow-light">Taj Mahal · India</span>
+      <h2 class="history-hero-heading">A Marble Tribute<br>to Love</h2>
+      <p class="history-hero-desc">Completed in 1653 after more than two decades of construction, the Taj Mahal blends Persian, Islamic, and Indian styles. Its marble changes color with the light of day, and its dome rises about 73 meters high.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg history-hero-btn">Plan A Trip</a>
+    </div>
+
+  </div>
+
+  <!-- Card row overlay -->
+  <div class="history-card-row">
+
+    <label for="bg-great-wall" class="history-card" style="background-image:url('4.jpg');">
+      <span class="history-card-overlay"></span>
+      <span class="history-card-info">
+        <span class="history-card-title">Great Wall</span>
+        <span class="history-card-desc">China</span>
+      </span>
+    </label>
+
+    <label for="bg-petra" class="history-card" style="background-image:url('5.jpg');">
+      <span class="history-card-overlay"></span>
+      <span class="history-card-info">
+        <span class="history-card-title">Petra</span>
+        <span class="history-card-desc">Jordan</span>
+      </span>
+    </label>
+
+    <label for="bg-christ-redeemer" class="history-card" style="background-image:url('6.jpg');">
+      <span class="history-card-overlay"></span>
+      <span class="history-card-info">
+        <span class="history-card-title">Christ the Redeemer</span>
+        <span class="history-card-desc">Brazil</span>
+      </span>
+    </label>
+
+    <label for="bg-machu-picchu" class="history-card" style="background-image:url('7.jpg');">
+      <span class="history-card-overlay"></span>
+      <span class="history-card-info">
+        <span class="history-card-title">Machu Picchu</span>
+        <span class="history-card-desc">Peru</span>
+      </span>
+    </label>
+
+    <label for="bg-chichen-itza" class="history-card" style="background-image:url('8.jpg');">
+      <span class="history-card-overlay"></span>
+      <span class="history-card-info">
+        <span class="history-card-title">Chichen Itza</span>
+        <span class="history-card-desc">Mexico</span>
+      </span>
+    </label>
+
+    <label for="bg-colosseum" class="history-card" style="background-image:url('9.jpg');">
+      <span class="history-card-overlay"></span>
+      <span class="history-card-info">
+        <span class="history-card-title">Colosseum</span>
+        <span class="history-card-desc">Italy</span>
+      </span>
+    </label>
+
+    <label for="bg-taj-mahal" class="history-card" style="background-image:url('10.jpg');">
+      <span class="history-card-overlay"></span>
+      <span class="history-card-info">
+        <span class="history-card-title">Taj Mahal</span>
+        <span class="history-card-desc">India</span>
+      </span>
+    </label>
+
+  </div>
+</section>
+
+<!-- HISTORY GALLERY  -->
+<section id="history-gallery" class="py-5 history-gallery-section">
+  <div class="container">
+    <h2 class="section-title-gallery">History Gallery</h2>
+
+    <div class="row g-3 mb-3">
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <button type="button" class="feature-card feature-card-lg" data-bs-toggle="modal" data-bs-target="#modalGreatWall" aria-label="View details about the Great Wall of China">
+          <img src="23.jpg" class="feature-card-img" alt="Great Wall of China">
+          <span class="feature-card-shade"></span>
+          <span class="feature-card-view">View</span>
+          <span class="feature-card-body">
+            <span class="feature-card-eyebrow">01 / Engineering</span>
+            <span class="feature-card-title">The Great Wall of China</span>
+            <span class="feature-card-desc">21,000 km of ancient defense.</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <button type="button" class="feature-card feature-card-lg" data-bs-toggle="modal" data-bs-target="#modalPetra" aria-label="View details about Petra">
+          <img src="24.jpg" class="feature-card-img" alt="Petra">
+          <span class="feature-card-shade"></span>
+          <span class="feature-card-view">View</span>
+          <span class="feature-card-body">
+            <span class="feature-card-eyebrow">02 / Legacy</span>
+            <span class="feature-card-title">Petra</span>
+            <span class="feature-card-desc">A rose-red city carved in stone.</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <button type="button" class="feature-card feature-card-lg" data-bs-toggle="modal" data-bs-target="#modalChristRedeemer" aria-label="View details about Christ the Redeemer">
+          <img src="25.jpg" class="feature-card-img" alt="Christ the Redeemer">
+          <span class="feature-card-shade"></span>
+          <span class="feature-card-view">View</span>
+          <span class="feature-card-body">
+            <span class="feature-card-eyebrow">03 / Devotion</span>
+            <span class="feature-card-title">Christ the Redeemer</span>
+            <span class="feature-card-desc">Watching over Rio de Janeiro.</span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="row g-3">
+
+      <div class="col-6 col-md-3">
+        <button type="button" class="feature-card feature-card-sm" data-bs-toggle="modal" data-bs-target="#modalMachuPicchu" aria-label="View details about Machu Picchu">
+          <img src="26.jpg" class="feature-card-img" alt="Machu Picchu">
+          <span class="feature-card-shade"></span>
+          <span class="feature-card-view">View</span>
+          <span class="feature-card-body">
+            <span class="feature-card-eyebrow">04 / Ruins</span>
+            <span class="feature-card-title">Machu Picchu</span>
+            <span class="feature-card-desc">The lost citadel of the Incas.</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <button type="button" class="feature-card feature-card-sm" data-bs-toggle="modal" data-bs-target="#modalChichenItza" aria-label="View details about Chichen Itza">
+          <img src="27.jpg" class="feature-card-img" alt="Chichen Itza">
+          <span class="feature-card-shade"></span>
+          <span class="feature-card-view">View</span>
+          <span class="feature-card-body">
+            <span class="feature-card-eyebrow">05 / Myth</span>
+            <span class="feature-card-title">Chichén Itzá</span>
+            <span class="feature-card-desc">Where the serpent descends.</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <button type="button" class="feature-card feature-card-sm" data-bs-toggle="modal" data-bs-target="#modalColosseum" aria-label="View details about the Colosseum">
+          <img src="28.jpg" class="feature-card-img" alt="Colosseum">
+          <span class="feature-card-shade"></span>
+          <span class="feature-card-view">View</span>
+          <span class="feature-card-body">
+            <span class="feature-card-eyebrow">06 / Arena</span>
+            <span class="feature-card-title">The Colosseum</span>
+            <span class="feature-card-desc">Rome's grand amphitheater.</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <button type="button" class="feature-card feature-card-sm" data-bs-toggle="modal" data-bs-target="#modalTajMahal" aria-label="View details about the Taj Mahal">
+          <img src="29.jpg" class="feature-card-img" alt="Taj Mahal">
+          <span class="feature-card-shade"></span>
+          <span class="feature-card-view">View</span>
+          <span class="feature-card-body">
+            <span class="feature-card-eyebrow">07 / Love</span>
+            <span class="feature-card-title">The Taj Mahal</span>
+            <span class="feature-card-desc">A marble tribute to love.</span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--  ABOUT  -->
+<section id="about" class="py-5 about-section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <h2 class="section-title mb-3">About the New 7 Wonders</h2>
+
+        <div class="accordion" id="aboutAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How were the winners chosen?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">
+                A worldwide poll organized by the New7Wonders Foundation attracted more than 100 million votes, and the results were announced in Lisbon, Portugal on July 7, 2007.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Why are they called the "New" 7 Wonders?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">
+                The original Seven Wonders of the Ancient World, such as the Hanging Gardens of Babylon and the Lighthouse of Alexandria, were compiled by Greek writers, but only the Great Pyramid of Giza survives today. It holds honorary status in the new list.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Can they all be visited today?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">
+                Yes! All seven are major tourist destinations, and each one is also recognized as a UNESCO World Heritage Site.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6">
+        <h2 class="section-title mb-3">Wonders at a Glance</h2>
+        <!-- List Group -->
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Great Wall of China <span class="badge bg-warning text-dark">China</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Petra <span class="badge bg-warning text-dark">Jordan</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Christ the Redeemer <span class="badge bg-warning text-dark">Brazil</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Machu Picchu <span class="badge bg-warning text-dark">Peru</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Chichén Itzá <span class="badge bg-warning text-dark">Mexico</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Colosseum <span class="badge bg-warning text-dark">Italy</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Taj Mahal <span class="badge bg-warning text-dark">India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  CONTACT   -->
+<section id="contact" class="py-5 contact-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center mb-5">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title-gallery contact-title">Plan Your Trip</h2>
+          <p class="contact-subtitle">Tell us which wonders you'd like to see and we'll help you build the trip.</p>
+        </div>
+
+        <form class="row g-3 contact-form" action="mailto:hello@love7wonders.example?subject=Trip%20Request" method="post" enctype="text/plain">
+          <div class="col-md-6">
+            <label for="contactName" class="form-label">Full name</label>
+            <input type="text" class="form-control" id="contactName" name="Name" placeholder="Juan Dela Cruz">
+          </div>
+
+          <div class="col-md-6">
+            <label for="contactEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="contactEmail" name="Email" placeholder="batumbakal@example.com">
+          </div>
+
+          <div class="col-md-6">
+            <label for="contactPhone" class="form-label">Phone number</label>
+            <input type="tel" class="form-control" id="contactPhone" name="Phone" placeholder="8-7000">
+          </div>
+
+          <div class="col-md-6">
+            <label for="contactWonder" class="form-label">Which tour interests you?</label>
+            <select class="form-select" id="contactWonder" name="Tour">
+              <option value="" selected disabled>Choose a tour</option>
+              <option value="Tour 1 - Great Wall of China">Tour 1 — Great Wall of China</option>
+              <option value="Tour 2 - Petra, Christ the Redeemer, Chichen Itza & Taj Mahal">Tour 2 — Petra, Christ the Redeemer, Chichén Itzá &amp; Taj Mahal</option>
+              <option value="Tour 3 - All 7 Wonders">Tour 3 — All 7 Wonders</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="contactMessage" name="Message" rows="4" placeholder="Tell us your travel dates, group size, or any questions you have."></textarea>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn wonder-submit-btn btn-lg">Send Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--   MODALS  -->
+
+<div class="modal fade" id="modalGreatWall" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Great Wall of China <span class="badge bg-warning text-dark ms-2">China</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="23.jpg" class="modal-img" alt="Great Wall of China">
+        <p class="mt-3 mb-0">Begun as early as the 7th century BC and expanded by successive dynasties, the Great Wall protected China from invasions. Contrary to popular myth, it is not visible from the Moon with the naked eye.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalPetra" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Petra <span class="badge bg-warning text-dark ms-2">Jordan</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="24.jpg" class="modal-img" alt="Petra">
+        <p class="mt-3 mb-0">Flourishing from around the 5th century BC, Petra controlled the trade routes of incense and spices. Its most famous facade, Al-Khazneh (The Treasury), greets visitors after a walk through a narrow canyon called the Siq.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalChristRedeemer" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Christ the Redeemer <span class="badge bg-warning text-dark ms-2">Brazil</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="25.jpg" class="modal-img" alt="Christ the Redeemer">
+        <p class="mt-3 mb-0">Completed in 1931, the statue is made of reinforced concrete and soapstone. It stands about 700 meters above sea level on Corcovado mountain and has become one of the most recognizable symbols of Brazil.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMachuPicchu" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Machu Picchu <span class="badge bg-warning text-dark ms-2">Peru</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="26.jpg" class="modal-img" alt="Machu Picchu">
+        <p class="mt-3 mb-0">Built around 1450 for the Inca emperor Pachacuti and abandoned a century later during the Spanish conquest, Machu Picchu was revealed to the world by Hiram Bingham in 1911. Its stones fit together without mortar.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalChichenItza" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Chichen Itza <span class="badge bg-warning text-dark ms-2">Mexico</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="27.jpg" class="modal-img" alt="Chichen Itza">
+        <p class="mt-3 mb-0">Flourishing from around 600 AD, Chichen Itza was one of the greatest Maya centers in Yucatan. During the spring and autumn equinoxes, the light on El Castillo creates the illusion of a serpent descending its staircase.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalColosseum" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Colosseum <span class="badge bg-warning text-dark ms-2">Italy</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="28.jpg" class="modal-img" alt="Colosseum">
+        <p class="mt-3 mb-0">Opened in 80 AD under Emperor Titus, the Colosseum hosted gladiator contests, animal hunts, and even mock sea battles. Its underground passages, called the hypogeum, lifted fighters and animals onto the arena floor.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalTajMahal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Taj Mahal <span class="badge bg-warning text-dark ms-2">India</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="29.jpg" class="modal-img" alt="Taj Mahal">
+        <p class="mt-3 mb-0">Completed in 1653 after more than two decades of construction, the Taj Mahal combines Persian, Islamic, and Indian styles. Its marble changes color with the light of the day, and its dome rises about 73 meters high.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  FOOTER  -->
+<footer class="site-footer py-4">
+  <div class="container text-center">
+    <h5 class="mb-1">The New 7 Wonders of the World</h5>
+    <p class="mb-1">CCS114 – Web Technologies · Midterm Assessment Task</p>
+    <p class="mb-0 small">
+      Group Members:<br>
+      Languita – Project Lead / Integrator · Flores, Macabasag, Jeresano, Hermo, Gimeno – UI/UX &amp; Layout Designer ·
+      Languita, Flores, Jeresano, Hermo, Gimeno – Component Developer · Ibdao – Content &amp; Documentation Lead
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
